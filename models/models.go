@@ -30,3 +30,8 @@ type MovieGenre struct {
 	CreatedAt time.Time `json:"created_at"`
 	UpdatedAt time.Time `json:"updated_at"`
 }
+
+type AppError struct {
+	ErrCode int    `json:"err_code"`
+	ErrDesc string `json:"err_desc"`
+}
